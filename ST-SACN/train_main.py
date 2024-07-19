@@ -26,8 +26,6 @@ if __name__ == '__main__':
     feature_matrix = feature_matrix.to(device)
     labels = labels.to(device)
     idx_val = torch.cat([idx_val,idx_test])
-    idx_val=torch.cat([idx_val,idx_train[1500:3100]])
-    # idx_train = torch.cat([idx_train, idx_test])
     idx_train = idx_train.to(device)
     idx_val = idx_val.to(device)
 
